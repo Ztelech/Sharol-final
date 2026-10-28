@@ -450,9 +450,9 @@ body {
 /* Encuadre de videos de la carpeta Videos */
 .videos-gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
-  max-width: 980px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }

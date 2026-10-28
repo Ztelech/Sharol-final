@@ -240,7 +240,13 @@ BODY {
   }
 }
 .container {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: inline-block;
+  width: auto;
   padding: 3px;
   background: linear-gradient(90deg, #03a9f4, #f441a5);
   border-radius: 0.9em;

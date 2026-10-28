@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+function initFlorNovia() {
   var doc = document,
       flower = doc.querySelector('.flower'),
       petalPartMarkup = '<div class="box"><div class="shape"></div></div>',
@@ -109,6 +109,7 @@ window.addEventListener('DOMContentLoaded', function() {
           console.log('Música en pausa por políticas del navegador:', error);
         });
       }
+    }
     var galaxyCanvas = document.getElementById('galaxy-canvas');
     var dots = [];
 
@@ -303,4 +304,10 @@ window.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initFlorNovia);
+} else {
+  initFlorNovia();
+}
